@@ -1,0 +1,722 @@
+{
+  "Vrije Universiteit Amsterdam": {
+    "lat": "52.33418005",
+    "lon": "4.866900549871122"
+  },
+  "AMC": {
+    "lat": "52.2924635",
+    "lon": "4.956576595884709"
+  },
+  "AMOLF": {
+    "lat": "52.35644635",
+    "lon": "4.948809434059832"
+  },
+  "Aalborg University": {
+    "lat": "57.01590275",
+    "lon": "9.975328266589907"
+  },
+  "Aalto University": {
+    "lat": "60.185477399999996",
+    "lon": "24.828376366996668"
+  },
+  "Aarhus University": {
+    "lat": "56.1672052",
+    "lon": "10.20260887096407"
+  },
+  "Academic Medical Center": {
+    "lat": "52.2924635",
+    "lon": "4.956576595884709"
+  },
+  "Academie van Bouwkunst Amsterdam": {
+    "lat": "52.367543749999996",
+    "lon": "4.903200991206718"
+  },
+  "Albert-Ludwigs-Universit\u00e4t Freiburg in Breisgau": {
+    "lat": "48.00229565",
+    "lon": "7.849140132188766"
+  },
+  "Anton Bruckner Privatuniversit\u00e4t": {
+    "lat": "48.310834",
+    "lon": "14.269426208088234"
+  },
+  "Arizona State University": {
+    "lat": "33.42152185",
+    "lon": "-111.93316158417922"
+  },
+  "ArtEZ Hogeschool voor de Kunsten": {
+    "lat": "52.5140331",
+    "lon": "6.1063927934834386"
+  },
+  "Auckland University of Technology": {
+    "lat": "-36.8530092",
+    "lon": "174.76641327496384"
+  },
+  "Bologna Business School": {
+    "lat": "44.4668156",
+    "lon": "11.3466042"
+  },
+  "Brown University": {
+    "lat": "41.82687235",
+    "lon": "-71.40122770696814"
+  },
+  "Brunel University London": {
+    "lat": "51.5325612",
+    "lon": "-0.47400459710442444"
+  },
+  "CDI Italia": {
+    "lat": "45.4769706",
+    "lon": "9.2095993"
+  },
+  "Cambridge University": {
+    "lat": "50.7944026",
+    "lon": "-1.0971748"
+  },
+  "Cardiff University": {
+    "lat": "51.4876641",
+    "lon": "-3.179162095615133"
+  },
+  "Charit\u00e9 - Universit\u00e4tsmedizin Berlin": {
+    "lat": "52.52585125",
+    "lon": "13.377739577932736"
+  },
+  "City of Hope": {
+    "lat": "34.1276438",
+    "lon": "-117.97324485000001"
+  },
+  "College of Europe": {
+    "lat": "51.210958950000006",
+    "lon": "3.2298119140263184"
+  },
+  "Colombia University": {
+    "lat": "49.258393749999996",
+    "lon": "-123.24658161001929"
+  },
+  "Columbia University": {
+    "lat": "40.8079488",
+    "lon": "-73.96179735692117"
+  },
+  "Copenhagen Business School": {
+    "lat": "55.677912649999996",
+    "lon": "12.523187369870843"
+  },
+  "Copenhagen University": {
+    "lat": "55.6809781",
+    "lon": "12.5773893"
+  },
+  "Cornell University": {
+    "lat": "42.4507221",
+    "lon": "-76.48620432707092"
+  },
+  "Courtauld Institute of Art": {
+    "lat": "51.5116948",
+    "lon": "-0.117442"
+  },
+  "DTU Elektro": {
+    "lat": "55.7699167",
+    "lon": "12.5040747"
+  },
+  "Durham University": {
+    "lat": "54.7686337",
+    "lon": "-1.5720894"
+  },
+  "EADA Business School": {
+    "lat": "41.3874481",
+    "lon": "2.1589394"
+  },
+  "EHESP": {
+    "lat": "48.116181850000004",
+    "lon": "-1.7023650880247707"
+  },
+  "ESCP Business School": {
+    "lat": "48.8424383",
+    "lon": "2.3176561"
+  },
+  "ESCP Europe": {
+    "lat": "52.52398995",
+    "lon": "13.289340407244442"
+  },
+  "ETH Z\u00fcrich": {
+    "lat": "47.3773269",
+    "lon": "8.5475089"
+  },
+  "EUDE Business School": {
+    "lat": "40.4658079",
+    "lon": "-3.6660313"
+  },
+  "Eindhoven University of Technology": {
+    "lat": "51.4486602",
+    "lon": "5.4903995655080475"
+  },
+  "Erasmus Mundus": {
+    "lat": "38.73273565",
+    "lon": "-9.159250390889056"
+  },
+  "Erasmus University Rotterdam": {
+    "lat": "51.9228696",
+    "lon": "4.487498568528366"
+  },
+  "European Institute": {
+    "lat": "49.624977200000004",
+    "lon": "6.151006560548694"
+  },
+  "European Law & Governance School": {
+    "lat": "47.50403215",
+    "lon": "19.05819575229181"
+  },
+  "Freie Universit\u00e4t Berlin": {
+    "lat": "52.4550822",
+    "lon": "13.296031557619791"
+  },
+  "Georgetown University": {
+    "lat": "38.90893925",
+    "lon": "-77.07457962060826"
+  },
+  "Grenoble Institut Neurosciences": {
+    "lat": "45.198626",
+    "lon": "5.744170840901852"
+  },
+  "Gustave Roussy": {
+    "lat": "48.8359658",
+    "lon": "2.3396553740726915"
+  },
+  "HEC Paris": {
+    "lat": "48.758468050000005",
+    "lon": "2.1663459513667513"
+  },
+  "Harper Island": {
+    "lat": "40.7811818",
+    "lon": "-91.07459670798166"
+  },
+  "Harvard University": {
+    "lat": "42.36790855",
+    "lon": "-71.12678237443698"
+  },
+  "Hebrew University of Jerusalem": {
+    "lat": "31.7918555",
+    "lon": "35.244723"
+  },
+  "Heidelberg University": {
+    "lat": "41.11442525",
+    "lon": "-83.16686666639325"
+  },
+  "Hertie School": {
+    "lat": "-18.9067274",
+    "lon": "47.5279386"
+  },
+  "Hult International Business School": {
+    "lat": "51.5152219",
+    "lon": "-0.0676810282654535"
+  },
+  "Humboldt University of Berlin": {
+    "lat": "52.51858145",
+    "lon": "13.39287840245042"
+  },
+  "INSEEC": {
+    "lat": "45.6435133",
+    "lon": "5.8701582"
+  },
+  "Imperial College London": {
+    "lat": "51.4989595",
+    "lon": "-0.17564125978794498"
+  },
+  "Inria": {
+    "lat": "45.2182986",
+    "lon": "5.807031930861125"
+  },
+  "Instituto Superior T\u00e9cnico": {
+    "lat": "38.73674335",
+    "lon": "-9.138392289084948"
+  },
+  "Johns Hopkins University": {
+    "lat": "39.33020225",
+    "lon": "-76.62186802236883"
+  },
+  "KTH Royal Institute of Technology": {
+    "lat": "59.2016758",
+    "lon": "17.6203201"
+  },
+  "Karolinska Institute": {
+    "lat": "59.219549549999996",
+    "lon": "17.94005487275674"
+  },
+  "King's College London": {
+    "lat": "51.5060001",
+    "lon": "-0.1121582948025203"
+  },
+  "La Salle University": {
+    "lat": "40.0374268",
+    "lon": "-75.15402196552299"
+  },
+  "Leiden University": {
+    "lat": "52.168633850000006",
+    "lon": "4.45966305742133"
+  },
+  "London Moorgate": {
+    "lat": "51.5182516",
+    "lon": "-0.0890625"
+  },
+  "London School of Economics and Political Science": {
+    "lat": "51.51459135",
+    "lon": "-0.11643065760988928"
+  },
+  "London School of Hygiene and Tropical Medicine": {
+    "lat": "51.5209537",
+    "lon": "-0.13037143644571766"
+  },
+  "Lund University": {
+    "lat": "58.163098500000004",
+    "lon": "8.001442632957419"
+  },
+  "Maastricht University": {
+    "lat": "50.8373469",
+    "lon": "4.406164"
+  },
+  "Malm\u00f6 University": {
+    "lat": "55.60885225",
+    "lon": "12.993250123534757"
+  },
+  "McGill University": {
+    "lat": "45.50691775",
+    "lon": "-73.5791162596496"
+  },
+  "National University of Singapore": {
+    "lat": "1.2962018",
+    "lon": "103.77689943784759"
+  },
+  "New Bulgarian University": {
+    "lat": "43.9901178",
+    "lon": "22.8809948"
+  },
+  "New York University": {
+    "lat": "40.72925325",
+    "lon": "-73.99625393609625"
+  },
+  "Open Universiteit": {
+    "lat": "50.8778442",
+    "lon": "5.9595413957439085"
+  },
+  "Oxford University": {
+    "lat": "51.7520849",
+    "lon": "-1.2516646208312259"
+  },
+  "Parsons School of Design": {
+    "lat": "40.7355794",
+    "lon": "-73.99433790649158"
+  },
+  "Peking University": {
+    "lat": "39.99171495",
+    "lon": "116.30393496863539"
+  },
+  "Queen Mary University of London": {
+    "lat": "51.5247272",
+    "lon": "-0.03931034663016243"
+  },
+  "Radboud University": {
+    "lat": "51.82151725",
+    "lon": "5.863403442541042"
+  },
+  "SOAS University of London": {
+    "lat": "51.5218979",
+    "lon": "-0.1288676341954016"
+  },
+  "Sanquin": {
+    "lat": "14.581732",
+    "lon": "-86.7786397"
+  },
+  "Sciences Po": {
+    "lat": "48.85389775",
+    "lon": "2.3290212312658136"
+  },
+  "Sciences Po Strasbourg": {
+    "lat": "48.581635899999995",
+    "lon": "7.76461267999068"
+  },
+  "Seoul National University": {
+    "lat": "37.26728",
+    "lon": "126.9841151"
+  },
+  "Shanghai Jiao Tong University": {
+    "lat": "31.200891149999997",
+    "lon": "121.4283949471511"
+  },
+  "Sotheby's Institute of Art": {
+    "lat": "51.518653900000004",
+    "lon": "-0.13120190520085334"
+  },
+  "Sotheby's Institute of Art": {
+    "lat": "51.518653900000004",
+    "lon": "-0.13120190520085334"
+  },
+  "Stanford University": {
+    "lat": "37.431313849999995",
+    "lon": "-122.16936535498309"
+  },
+  "Stockholm University": {
+    "lat": "59.366141",
+    "lon": "18.059592960559392"
+  },
+  "TU Delft": {
+    "lat": "51.99882735",
+    "lon": "4.373960368154041"
+  },
+  "Technical University Munich": {
+    "lat": "48.149554550000005",
+    "lon": "11.567753141783761"
+  },
+  "Technical University of Denmark": {
+    "lat": "55.785414450000005",
+    "lon": "12.520215144442094"
+  },
+  "Technical University of Munich": {
+    "lat": "48.2655696",
+    "lon": "11.669347042050163"
+  },
+  "The Australian National University": {
+    "lat": "-35.28121335",
+    "lon": "149.11677886464528"
+  },
+  "The Chinese University of Hong Kong": {
+    "lat": "22.4202695",
+    "lon": "114.20786343863233"
+  },
+  "The Glasgow School of Art": {
+    "lat": "55.866305499999996",
+    "lon": "-4.263902530570013"
+  },
+  "The London School of Economics and Political Science": {
+    "lat": "51.51459135",
+    "lon": "-0.11643065760988928"
+  },
+  "The Netherlands Cancer Institute": {
+    "lat": "52.3494454",
+    "lon": "4.8253264"
+  },
+  "The New School": {
+    "lat": "40.73547915",
+    "lon": "-73.9970708835668"
+  },
+  "The University of Chicago": {
+    "lat": "41.7913505",
+    "lon": "-87.60084269431965"
+  },
+  "The University of Edinburgh": {
+    "lat": "55.9441283",
+    "lon": "-3.1884063612377216"
+  },
+  "The University of Hong Kong": {
+    "lat": "22.28269745",
+    "lon": "114.13845499995571"
+  },
+  "The University of Manchester": {
+    "lat": "53.47396245",
+    "lon": "-2.2351186696632572"
+  },
+  "The University of Sheffield": {
+    "lat": "53.3815327",
+    "lon": "-1.4806602"
+  },
+  "The University of Stirling": {
+    "lat": "56.145115399999995",
+    "lon": "-3.917393804088662"
+  },
+  "Tilburg University": {
+    "lat": "51.56306085",
+    "lon": "5.043598467727852"
+  },
+  "Tokyo University of Technology": {
+    "lat": "35.6255289",
+    "lon": "139.3424269692968"
+  },
+  "Trinity College Dublin": {
+    "lat": "53.34366745",
+    "lon": "-6.254444724511822"
+  },
+  "Tsinghua University": {
+    "lat": "40.002290450000004",
+    "lon": "116.3209629696906"
+  },
+  "UMC Utrecht": {
+    "lat": "52.0870179",
+    "lon": "5.18009895237262"
+  },
+  "Universitair Medisch Centrum Groningen": {
+    "lat": "53.22310875",
+    "lon": "6.5741402525499915"
+  },
+  "Universiteit van Amsterdam": {
+    "lat": "52.3688053",
+    "lon": "4.8930549"
+  },
+  "University College Dublin": {
+    "lat": "53.3079633",
+    "lon": "-6.2342858"
+  },
+  "University College London": {
+    "lat": "51.52420305",
+    "lon": "-0.13300072425929543"
+  },
+  "University of Amsterdam": {
+    "lat": "52.3550626",
+    "lon": "4.9509648503886226"
+  },
+  "University of Auckland": {
+    "lat": "-36.8660955",
+    "lon": "174.77373305445155"
+  },
+  "University of Bocconi": {
+    "lat": "45.449719400000006",
+    "lon": "9.18870807637676"
+  },
+  "University of Brighton": {
+    "lat": "50.754401900000005",
+    "lon": "0.263614795335824"
+  },
+  "University of Bristol": {
+    "lat": "51.4576128",
+    "lon": "-2.6016206507957573"
+  },
+  "University of British Columbia": {
+    "lat": "49.258393749999996",
+    "lon": "-123.24658161001929"
+  },
+  "University of California, Berkeley": {
+    "lat": "37.8753497",
+    "lon": "-122.23963364918777"
+  },
+  "University of California, San Diego": {
+    "lat": "32.87935255",
+    "lon": "-117.2311004938553"
+  },
+  "University of Cambridge": {
+    "lat": "52.1998523",
+    "lon": "0.11973865741074383"
+  },
+  "University of Cape Town": {
+    "lat": "-33.95675585",
+    "lon": "18.467577702002977"
+  },
+  "University of Cologne ": {
+    "lat": "50.928038900000004",
+    "lon": "6.9281744676751575"
+  },
+  "University of Copenhagen": {
+    "lat": "55.6801502",
+    "lon": "12.57232700140625"
+  },
+  "University of Edinburgh": {
+    "lat": "55.9441283",
+    "lon": "-3.1884063612377216"
+  },
+  "University of Geneva": {
+    "lat": "46.1935215",
+    "lon": "6.1515108"
+  },
+  "University of Glasgow": {
+    "lat": "55.872315349999994",
+    "lon": "-4.289219112981823"
+  },
+  "University of Groningen": {
+    "lat": "53.21967825",
+    "lon": "6.562514822065418"
+  },
+  "University of Gr\u00eanoble-Alpes": {
+    "lat": "45.185563",
+    "lon": "5.7854095"
+  },
+  "University of Helsinki": {
+    "lat": "60.171039300000004",
+    "lon": "24.94915045639812"
+  },
+  "University of Hildesheim": {
+    "lat": "52.13362345",
+    "lon": "9.975943762141664"
+  },
+  "University of Iceland": {
+    "lat": "64.13950095",
+    "lon": "-21.95423478360837"
+  },
+  "University of Kent": {
+    "lat": "51.295015750000005",
+    "lon": "1.0673010856199983"
+  },
+  "University of Konstanz": {
+    "lat": "47.690088599999996",
+    "lon": "9.188243876500252"
+  },
+  "University of Lausanne": {
+    "lat": "46.5225695",
+    "lon": "6.580950497654294"
+  },
+  "University of Law": {
+    "lat": "51.52055835",
+    "lon": "-0.131674573274454"
+  },
+  "University of Leeds": {
+    "lat": "53.8066846",
+    "lon": "-1.5560378380435451"
+  },
+  "University of Leuven": {
+    "lat": "50.8611279",
+    "lon": "4.696726917796607"
+  },
+  "University of Lisbon": {
+    "lat": "38.75109295",
+    "lon": "-9.156203506379315"
+  },
+  "University of Ljubljana": {
+    "lat": "46.04382485",
+    "lon": "14.52778695632087"
+  },
+  "University of London": {
+    "lat": "51.5220869",
+    "lon": "-0.128343"
+  },
+  "University of Melbourne": {
+    "lat": "-37.7970796",
+    "lon": "144.96130134414312"
+  },
+  "University of Michigan": {
+    "lat": "42.2942142",
+    "lon": "-83.71003893509601"
+  },
+  "University of M\u00fcnster": {
+    "lat": "51.96734215",
+    "lon": "7.599243326272159"
+  },
+  "University of Oldenburg": {
+    "lat": "53.146872200000004",
+    "lon": "8.181507870668597"
+  },
+  "University of Oslo": {
+    "lat": "59.9414173",
+    "lon": "10.719753298728813"
+  },
+  "University of Oxford": {
+    "lat": "51.75870755",
+    "lon": "-1.2556684826092037"
+  },
+  "University of Reading": {
+    "lat": "51.4412092",
+    "lon": "-0.9453854"
+  },
+  "University of Sheffield": {
+    "lat": "53.3815327",
+    "lon": "-1.4806602"
+  },
+  "University of Southampton": {
+    "lat": "1.42989335",
+    "lon": "103.61220466677912"
+  },
+  "University of St. Andrews": {
+    "lat": "56.3398198",
+    "lon": "-2.8117937053149826"
+  },
+  "University of Sussex": {
+    "lat": "50.867955699999996",
+    "lon": "-0.08778561625438146"
+  },
+  "University of Toronto": {
+    "lat": "43.663461999999996",
+    "lon": "-79.39775965337452"
+  },
+  "University of Trento": {
+    "lat": "46.0661497",
+    "lon": "11.11662318758863"
+  },
+  "University of Twente": {
+    "lat": "52.2233862",
+    "lon": "6.88542315997116"
+  },
+  "University of T\u00fcbingen": {
+    "lat": "48.53405945",
+    "lon": "9.071244429234808"
+  },
+  "University of Ulster": {
+    "lat": "41.7388059",
+    "lon": "-74.0844392955421"
+  },
+  "University of Vienna": {
+    "lat": "48.2131284",
+    "lon": "16.360685994114505"
+  },
+  "University of Virginia": {
+    "lat": "37.96942765",
+    "lon": "-78.47970997052111"
+  },
+  "University of Warwick": {
+    "lat": "52.3813073",
+    "lon": "-1.5639369456640528"
+  },
+  "University of York": {
+    "lat": "53.9453903",
+    "lon": "-1.0314592943104675"
+  },
+  "University of the Arts London": {
+    "lat": "51.5176785",
+    "lon": "-0.11640326479620346"
+  },
+  "Universit\u00e4t f\u00fcr Musik and darstellende Kunst Wien": {
+    "lat": "48.2020489",
+    "lon": "16.38565410984124"
+  },
+  "Universit\u00e9 Grenoble Alpes": {
+    "lat": "45.1972966",
+    "lon": "5.7716723"
+  },
+  "Uppsala University": {
+    "lat": "59.85758525",
+    "lon": "17.629521017894447"
+  },
+  "Uppsala University": {
+    "lat": "59.85758525",
+    "lon": "17.629521017894447"
+  },
+  "Utrecht University": {
+    "lat": "52.0851623",
+    "lon": "5.1741064"
+  },
+  "VUmc": {
+    "lat": "52.334632",
+    "lon": "4.8599107386474145"
+  },
+  "Vrije Universiteit": {
+    "lat": "52.33396225",
+    "lon": "4.865196500737312"
+  },
+  "Vrije Universiteit Amsterdam": {
+    "lat": "52.33418005",
+    "lon": "4.866900549871122"
+  },
+  "Vrije Universiteit Brussel": {
+    "lat": "50.8216517",
+    "lon": "4.3971254"
+  },
+  "Wageningen University": {
+    "lat": "51.98544495",
+    "lon": "5.663215776808785"
+  },
+  "Wegener Center Graz": {
+    "lat": "47.07477885",
+    "lon": "15.447819456019928"
+  },
+  "Western University": {
+    "lat": "32.7139413",
+    "lon": "-117.0372503"
+  },
+  "Widener University": {
+    "lat": "39.8606395",
+    "lon": "-75.35659321419246"
+  },
+  "Witten/Herdecke University": {
+    "lat": "51.45218815",
+    "lon": "7.357114827030026"
+  },
+  "Yale University": {
+    "lat": "41.25713055",
+    "lon": "-72.98966960152231"
+  },
+  "\u00d6rebro University": {
+    "lat": "59.2544839",
+    "lon": "15.2498899"
+  }
+}
