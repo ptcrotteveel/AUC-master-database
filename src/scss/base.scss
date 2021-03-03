@@ -1,0 +1,32 @@
+@import '~antd/dist/antd.css';
+
+h1 {
+  font-size: 10vmax;
+  line-height: 8vmax;
+}
+
+h3 {
+  font-size: 4vmax;
+}
+
+h4 {
+  font-size: 3vmax;
+}
+
+h5 {
+  font-size: 2vmax;
+}
+
+.padded {
+  padding: 0 5vw;
+}
+
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
