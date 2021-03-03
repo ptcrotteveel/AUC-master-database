@@ -1,0 +1,40 @@
+@import "../../../scss/_variables";
+
+#overview {
+  #filters {
+    padding: 20px;
+    height: calc(100vh - 170px);
+    overflow: scroll;
+
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+
+    #query {
+      margin: 10px 0;
+    }
+
+    #resultCount {
+      background-color: $primary-gold;
+      font-weight: bold;
+      margin: 0;
+      padding: 3px 10px;
+      border-radius: 3px;
+      font-size: 110%;
+      transition: all ease-in-out 300ms;
+    }
+
+    #schools {
+      .school {
+        padding: 5px 0;
+        font-size: 1.25rem;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
