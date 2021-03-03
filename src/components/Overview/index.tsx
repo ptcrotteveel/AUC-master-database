@@ -27,7 +27,7 @@ export default class Overview extends Component<IProps, IState> {
             <Filters schools={schools} />
           </Col>
           <Col xs={14} md={16}>
-            <Map center={[53, 4]} zoom={5} schools={schools} />
+            <Map center={[53, 4]} zoom={2} schools={schools} />
           </Col>
         </Row>
       </div>

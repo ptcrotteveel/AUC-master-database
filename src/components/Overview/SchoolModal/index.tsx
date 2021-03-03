@@ -44,7 +44,23 @@ export default class SchoolModal extends Component<{}, IState> {
 
     return (
       <div id={"schoolModal"}>
-        <Modal title={name}
+        <Modal title={(
+          <div>
+            <div style={{
+              height: 60,
+              width: 240,
+              float: 'right',
+              background: 'url(/logo.jpg)',
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat"
+            }} />
+
+            <div>
+              <span style={{margin: 0, padding: 0}}>AUC Masters Database</span>
+              <h5>{ name }</h5>
+            </div>
+          </div>
+        )}
                visible={isOpen}
                onOk={() => this.setState({ isOpen: false })}
                onCancel={() => this.setState({ isOpen: false })}
@@ -55,9 +71,7 @@ export default class SchoolModal extends Component<{}, IState> {
         >
           <Row gutter={10}>
             <Col xs={24} md={16}>
-              <h4>{ name }</h4>
-
-              Available tracks: { tracks }
+              <strong>Available tracks:</strong> { tracks }
               <h5 style={{marginTop: 20}}>Master programmes</h5>
               { programmes.map(p => (<p>{ p.programme } <Tag>{ p.field }</Tag></p>))}
             </Col>
@@ -65,6 +79,7 @@ export default class SchoolModal extends Component<{}, IState> {
             <Col xs={24} md={8}>
               { location &&
                 <MapContainer id={"modalMap"}
+                              style={{ height: 300, width: '100%'}}
                               key={name}
                               center={[location.lat, location.lon]}
                               zoom={10}
@@ -74,7 +89,6 @@ export default class SchoolModal extends Component<{}, IState> {
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=04d2ae4998f544cabe64bf2fd19724c3"
                   />
-
                 </MapContainer>
               }
             </Col>
