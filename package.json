@@ -1,0 +1,69 @@
+{
+  "name": "iguideme",
+  "version": "0.1.1-b",
+  "private": true,
+  "dependencies": {
+    "@types/history": "^4.7.7",
+    "@types/leaflet": "^1.5.23",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-fade-in": "^0.1.0",
+    "@types/react-leaflet-markercluster": "^2.0.0",
+    "@types/react-redux": "^7.1.9",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/react-router-redux": "^5.0.18",
+    "@types/react-select": "^3.1.2",
+    "@types/redux-logger": "^3.0.8",
+    "@types/redux-promise": "^0.5.29",
+    "antd": "^4.6.2",
+    "axios": "^0.20.0",
+    "glider-js": "^1.7.3",
+    "leaflet": "^1.7.1",
+    "moment": "^2.28.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-fade-in": "^1.1.0",
+    "react-glider": "^2.0.4",
+    "react-infinite-scroll-component": "^6.0.0",
+    "react-leaflet": "^3.1.0",
+    "react-leaflet-markercluster": "^3.0.0-rc1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "^3.4.3",
+    "react-select": "^4.0.2",
+    "react-slick": "^0.28.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "typescript": "^4.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.4"
+  }
+}
