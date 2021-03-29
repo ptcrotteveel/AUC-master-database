@@ -9,8 +9,14 @@ export default class DatamartController {
       (a.programme || "").localeCompare(b.programme || "")).filter(p => p.programme !== null)
 
     if (school) {
-      data = data.filter(x => x.school.toLowerCase().includes(school.toLowerCase()));
+      data = data.filter(
+        x => x.school.toLowerCase().includes(school.toLowerCase())
+      );
     }
+
+    data = data.filter(
+      x => x.field !== "Unspecified"
+    )
 
     return data;
   }
