@@ -22,8 +22,8 @@ export default class Filters extends Component<IProps, IState> {
     return (
       <div id={"filters"}>
         <FadeIn>
-          <h4>AUC Masters Database</h4>
-          <span>This list gives an overview of all universities visible on the map.</span>
+          <h5>AUC Masters Database</h5>
+          <span>This list gives an overview of all the universities and research institutes where AUC alumni have completed a master’s degree or PhD</span>
 
           <Input id={"query"}
                  value={this.state.query}

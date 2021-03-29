@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import Select from "react-select";
-import { Col, Row } from "antd";
+import {Col, Row, Tooltip} from "antd";
 import "./style.scss";
 import DatamartController from "../../../api/controllers/datamart";
 import School from "../../../models/School";
+import {Filterable} from "../../../models/Filterable";
+import { QuestionCircleOutlined } from "@ant-design/icons";
 
 type IState = {
   continent: string | null;
@@ -13,9 +15,12 @@ type IState = {
   track: string | null
 }
 
-export default class Configuration extends Component<{
-  setSchools: (schools: School[]) => any
-}, IState> {
+type IProps = {
+  setSchools: (schools: School[]) => any,
+  setFilterable: (filterable: Filterable) => any
+}
+
+export default class Configuration extends Component<IProps, IState> {
 
   state = {
     continent: null,
@@ -35,6 +40,13 @@ export default class Configuration extends Component<{
     if (track) schools = schools.filter(s => s.track === track);
 
     this.props.setSchools(schools);
+    this.props.setFilterable({
+      continent: null,
+      country,
+      field,
+      programme,
+      track
+    });
   }
 
   render(): React.ReactNode {
@@ -64,19 +76,12 @@ export default class Configuration extends Component<{
       <div id={"configuration"}>
         <Row gutter={[10, 10]}>
           <Col flex={1}>
-            <Select placeholder={"Region"}
-                    isClearable={true}
-                    options={[
-                      { label: "Africa", value: "Africa" },
-                      { label: "Asia", value: "Asia" },
-                      { label: "Europe", value: "Europe" },
-                      { label: "Latin America", value: "Latin America" },
-                      { label: "North America", value: "North America" },
-                      { label: "Oceania", value: "Oceania" }
-                    ]}
-            />
-          </Col>
-          <Col flex={1}>
+            <label>
+              Filter by country &nbsp;
+              <Tooltip title={"Country in which the university is located"}>
+                <QuestionCircleOutlined />
+              </Tooltip>
+            </label>
             <Select placeholder={"Country"}
                     value={(this.state.country ?
                         { label: this.state.country!, value: this.state.country! } : null
@@ -89,18 +94,34 @@ export default class Configuration extends Component<{
             />
           </Col>
           <Col flex={1}>
-            <Select placeholder={"Track"}
-                    options={tracks.map(t => ({ label: t, value: t}))}
+            <label>
+              Filter by degree title &nbsp;
+              <Tooltip title={"Master’s programme followed at the university"}>
+                <QuestionCircleOutlined />
+              </Tooltip>
+            </label>
+            <Select placeholder={"Degree Title"}
+                    options={programmes
+                      .filter(p => p !== "BSc Artificial Intelligence" && p.length > 2 && p !== "PhD ?")
+                      .filter((v,i,a) => a.findIndex(t=>(t.trim() === v.trim()))===i)
+                      .map(p => ({ label: p, value: p}))}
                     isClearable={true}
-                    value={(this.state.track ?
-                        { label: this.state.track!, value: this.state.track! } : null
+                    value={(this.state.programme ?
+                        { label: this.state.programme!, value: this.state.programme! } : null
                     )}
-                    onChange={(e) => this.setState({ track: e ? e.value : null }, this.update)}
+                    onChange={(e) => this.setState({ programme: e ? e.value : null }, this.update)}
             />
           </Col>
           <Col flex={1}>
+            <label>
+              Filter by field of study &nbsp;
+              <Tooltip title={"Academic field of the master’s programme"}>
+                <QuestionCircleOutlined />
+              </Tooltip>
+            </label>
             <Select placeholder={"Field of study"}
-                    options={fields.map(f => ({ label: f, value: f}))}
+                    options={fields.filter(f => f.length > 2)
+                      .map(f => ({ label: f, value: f}))}
                     value={(this.state.field ?
                         { label: this.state.field!, value: this.state.field! } : null
                     )}
@@ -109,13 +130,39 @@ export default class Configuration extends Component<{
             />
           </Col>
           <Col flex={1}>
+            <label>
+              Filter by major &nbsp;
+              <Tooltip title={"Major completed at AUC by alumni"}>
+                <QuestionCircleOutlined />
+              </Tooltip>
+            </label>
             <Select placeholder={"Major"}
-                    options={programmes.map(p => ({ label: p, value: p}))}
+                    options={tracks
+                      .map(t => ({ label: t, value: t}))}
                     isClearable={true}
-                    value={(this.state.programme ?
-                      { label: this.state.programme!, value: this.state.programme! } : null
+                    value={(this.state.track ?
+                        { label: this.state.track!, value: this.state.track! } : null
                     )}
-                    onChange={(e) => this.setState({ programme: e ? e.value : null }, this.update)}
+                    onChange={(e) => this.setState({ track: e ? e.value : null }, this.update)}
+            />
+          </Col>
+          <Col flex={1}>
+            <label>
+              Filter by region &nbsp;
+              <Tooltip title={"Region in which the university is located"}>
+                <QuestionCircleOutlined />
+              </Tooltip>
+            </label>
+            <Select placeholder={"Region"}
+                    isClearable={true}
+                    options={[
+                      { label: "Africa", value: "Africa" },
+                      { label: "Asia", value: "Asia" },
+                      { label: "Europe", value: "Europe" },
+                      { label: "Latin America", value: "Latin America" },
+                      { label: "North America", value: "North America" },
+                      { label: "Oceania", value: "Oceania" }
+                    ]}
             />
           </Col>
         </Row>

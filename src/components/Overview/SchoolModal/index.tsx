@@ -3,13 +3,15 @@ import {Row, Col, Modal, Tag} from "antd";
 import DatamartController from "../../../api/controllers/datamart";
 import "./style.scss";
 import {MapContainer, TileLayer} from "react-leaflet";
+import School from "../../../models/School";
+import {Filterable} from "../../../models/Filterable";
 
 type IState = {
   isOpen: boolean,
   name: string | null,
 }
 
-export default class SchoolModal extends Component<{}, IState> {
+export default class SchoolModal extends Component<{filterable: Filterable}, IState> {
 
   state = {
     isOpen: false, name: null
@@ -33,6 +35,7 @@ export default class SchoolModal extends Component<{}, IState> {
 
   render(): React.ReactNode {
     const { isOpen, name } = this.state;
+    const { filterable } = this.props;
     const programmes = DatamartController.getData(name!);
 
     const tracks = programmes.length > 0 ?
@@ -73,7 +76,13 @@ export default class SchoolModal extends Component<{}, IState> {
             <Col xs={24} md={16}>
               <strong>Available tracks:</strong> { tracks }
               <h5 style={{marginTop: 20}}>Master programmes</h5>
-              { programmes.map(p => (<p>{ p.programme } <Tag>{ p.field }</Tag></p>))}
+              { programmes.filter(p => (
+                (filterable.track ? p.track === filterable.track : true) &&
+                (filterable.field ? p.field === filterable.field : true) &&
+                (filterable.programme ? p.programme === filterable.programme : true)
+              ))
+                .filter((v,i,a)=>a.findIndex(t=>(t.programme === v.programme))===i)
+                .map(p => (<p>{ p.programme } <Tag>{ p.field }</Tag></p>))}
             </Col>
 
             <Col xs={24} md={8}>
