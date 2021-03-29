@@ -1,0 +1,18 @@
+trigger:
+- master
+
+pool: 'default'
+
+steps:
+- script: |
+    npm install
+  displayName: 'npm install'
+
+- script: |
+    npm run build
+  displayName: 'npm run build'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: './build'
+    ArtifactName: 'AUC-master-database'
