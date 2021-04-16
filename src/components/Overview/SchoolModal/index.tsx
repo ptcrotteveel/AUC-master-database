@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Row, Col, Modal, Tag} from "antd";
+import {Row, Col, Modal, Tag, Button} from "antd";
 import DatamartController from "../../../api/controllers/datamart";
 import "./style.scss";
 import {MapContainer, TileLayer} from "react-leaflet";
@@ -37,6 +37,8 @@ export default class SchoolModal extends Component<{filterable: Filterable}, ISt
     const { isOpen, name } = this.state;
     const { filterable } = this.props;
     const programmes = DatamartController.getData(name!);
+    const interviews = DatamartController.getInterviews();
+    const interview = interviews.find(i => i.university === name);
 
     const tracks = programmes.length > 0 ?
       programmes.map(p => p.track).filter(
@@ -51,9 +53,9 @@ export default class SchoolModal extends Component<{filterable: Filterable}, ISt
           <div>
             <div style={{
               height: 60,
-              width: 240,
+              width: 80,
               float: 'right',
-              background: 'url(/logo.jpg)',
+              background: 'url(/auc_small.png)',
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat"
             }} />
@@ -75,7 +77,7 @@ export default class SchoolModal extends Component<{filterable: Filterable}, ISt
           <Row gutter={10}>
             <Col xs={24} md={16}>
               <strong>Available tracks:</strong> { tracks }
-              <h5 style={{marginTop: 20}}>Master programmes</h5>
+              <h5 style={{marginTop: 20}}>Graduate programmes</h5>
               { programmes.filter(p => (
                 (filterable.track ? p.track === filterable.track : true) &&
                 (filterable.field ? p.field === filterable.field : true) &&
@@ -87,19 +89,31 @@ export default class SchoolModal extends Component<{filterable: Filterable}, ISt
 
             <Col xs={24} md={8}>
               { location &&
-                <MapContainer id={"modalMap"}
-                              style={{ height: 300, width: '100%'}}
-                              key={name}
-                              center={[location.lat, location.lon]}
-                              zoom={10}
-                              scrollWheelZoom={false}
-                >
-                  <TileLayer
-                    attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=04d2ae4998f544cabe64bf2fd19724c3"
-                  />
-                </MapContainer>
+                <React.Fragment>
+                  <MapContainer id={"modalMap"}
+                                style={{ height: 300, width: '100%'}}
+                                key={name}
+                                center={[location.lat, location.lon]}
+                                zoom={10}
+                                scrollWheelZoom={false}
+                  >
+                    <TileLayer
+                      attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                      url="https://tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=04d2ae4998f544cabe64bf2fd19724c3"
+                    />
+                  </MapContainer>
+                </React.Fragment>
               }
+
+              <br />
+              { interview &&
+                <p>What do others say about {name}? Find the section named <b>{interview.title}</b> on the page linked below.</p>
+              }
+              <a href={'https://canvas.uva.nl/courses/16738/pages/alumni-stories?module_item_id=612744'} target={'_blank'}>
+                <Button>
+                  { interview ? `Watch interview` : `All alumni interviews` }
+                </Button>
+              </a>
             </Col>
           </Row>
         </Modal>

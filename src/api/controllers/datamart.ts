@@ -1,5 +1,6 @@
 import programmes from "../store/dataset.json";
 import locations from "../store/locations.json";
+import interviews from "../store/interviews.json";
 import School from "../../models/School";
 
 export default class DatamartController {
@@ -32,5 +33,9 @@ export default class DatamartController {
 
   public static getSchools = () => {
     return Object.keys(locations);
+  }
+
+  public static getInterviews = () => {
+    return interviews;
   }
 }
