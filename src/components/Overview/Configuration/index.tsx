@@ -104,7 +104,9 @@ export default class Configuration extends Component<IProps, IState> {
                     options={programmes
                       .filter(p => p !== "BSc Artificial Intelligence" && p.length > 2 && p !== "PhD ?")
                       .filter((v,i,a) => a.findIndex(t=>(t.trim() === v.trim()))===i)
-                      .map(p => ({ label: p, value: p}))}
+                      .map(p => ({ label: p, value: p}))
+                      .sort((a, b) => a.label.localeCompare(b.label))
+                    }
                     isClearable={true}
                     value={(this.state.programme ?
                         { label: this.state.programme!, value: this.state.programme! } : null
@@ -121,7 +123,9 @@ export default class Configuration extends Component<IProps, IState> {
             </label>
             <Select placeholder={"Field of study"}
                     options={fields.filter(f => f.length > 2)
-                      .map(f => ({ label: f, value: f}))}
+                      .map(f => ({ label: f, value: f}))
+                      .sort((a, b) => a.label.localeCompare(b.label))
+                    }
                     value={(this.state.field ?
                         { label: this.state.field!, value: this.state.field! } : null
                     )}
@@ -138,7 +142,9 @@ export default class Configuration extends Component<IProps, IState> {
             </label>
             <Select placeholder={"Major"}
                     options={tracks
-                      .map(t => ({ label: t, value: t}))}
+                      .map(t => ({ label: t, value: t}))
+                      .sort((a, b) => a.label.localeCompare(b.label))
+                    }
                     isClearable={true}
                     value={(this.state.track ?
                         { label: this.state.track!, value: this.state.track! } : null
