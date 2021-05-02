@@ -152,7 +152,14 @@ export default class Configuration extends Component<IProps, IState> {
                     onChange={(e) => this.setState({ track: e ? e.value : null }, this.update)}
             />
           </Col>
-          <Col flex={1}>
+        </Row>
+      </div>
+    )
+  }
+}
+
+/*
+<Col flex={1}>
             <label>
               Filter by region &nbsp;
               <Tooltip title={"Region in which the university is located"}>
@@ -171,8 +178,4 @@ export default class Configuration extends Component<IProps, IState> {
                     ]}
             />
           </Col>
-        </Row>
-      </div>
-    )
-  }
-}
+ */
