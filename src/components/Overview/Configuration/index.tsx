@@ -32,12 +32,17 @@ export default class Configuration extends Component<IProps, IState> {
 
   update = () => {
     let schools: School[] = DatamartController.getData();
-    const { country, field, programme, track } = this.state;
+    const { country, field, programme, track, continent } = this.state;
+    const loc = (school: string) => {
+      const match = DatamartController.getLocation(school);
+      return (match && continent) ? match.region === continent : false;
+    }
 
     if (field) schools = schools.filter(s => s.field === field);
     if (programme) schools = schools.filter(s => s.programme === programme);
     if (country) schools = schools.filter(s => s.country === country);
     if (track) schools = schools.filter(s => s.track === track);
+    if (continent) schools = schools.filter(s => loc(s.school));
 
     this.props.setSchools(schools);
     this.props.setFilterable({
@@ -150,6 +155,26 @@ export default class Configuration extends Component<IProps, IState> {
                         { label: this.state.track!, value: this.state.track! } : null
                     )}
                     onChange={(e) => this.setState({ track: e ? e.value : null }, this.update)}
+            />
+          </Col>
+          <Col flex={1}>
+            <label>
+              Filter by region &nbsp;
+              <Tooltip title={"Region in which the university is located"}>
+                <QuestionCircleOutlined />
+              </Tooltip>
+            </label>
+            <Select placeholder={"Region"}
+                    isClearable={true}
+                    onChange={(e) => this.setState({ continent: e ? e.value : null }, this.update)}
+                    options={[
+                      { label: "Africa", value: "Africa" },
+                      { label: "Asia", value: "Asia" },
+                      { label: "Europe", value: "Europe" },
+                      { label: "Latin America", value: "Latin America" },
+                      { label: "North America", value: "North America" },
+                      { label: "Oceania", value: "Oceania" }
+                    ]}
             />
           </Col>
         </Row>
